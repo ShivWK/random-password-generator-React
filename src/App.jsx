@@ -60,7 +60,7 @@ export default function App() {
     
     <>
       <h1 className='text-4xl text-center mt-10 mx-2 font-medium'>Password Generater</h1>
-      <div className='mt-5 w-fit mx-auto p-4 rounded-lg bg-gray-600 pb-8
+      <div className='mt-5 w-fit mx-auto p-4 rounded-lg bg-red-400 pb-8
       '>
         <div className='flex rounded-lg w-[525px] bg-white'>
           <input ref={passwordRef} value={password} className='bg-transparent w-full text-orange-600 font-bold text-xl border-none p-3 outline-none rounded-s-lg ' type="text" />
@@ -70,14 +70,14 @@ export default function App() {
           <input ref={ramgeRef} type="range" defaultValue={length} min={0} max={100} onChange={()=>{
             setLength(ramgeRef.current.value)
           }}/>
-          <span className='text-orange-600 font-bold'>Length {length}</span>
+          <span className='text-teal-800 font-bold'>Length {length}</span>
           <span>
             <input onChange={()=>{setNumberAllowed((prev)=>!prev)}} type="checkbox" name="" id="" />
-            <span className='text-orange-600 font-bold mx-1 '>Numbers</span>
+            <span className='text-teal-800 font-bold mx-1 '>Numbers</span>
           </span>
           <span>
             <input onChange={()=>{setCharacterAllowed((prev)=>!prev)}} type="checkbox" name="" id="" />
-            <span className='text-orange-600 mx-1 font-bold'>Special Characters</span>
+            <span className='text-teal-800 mx-1 font-bold'>Special Characters</span>
           </span>
         </div>
         <div className='flex justify-center'>
