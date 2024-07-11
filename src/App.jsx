@@ -63,21 +63,21 @@ export default function App() {
       <div className='mt-5 w-fit mx-auto p-4 rounded-lg bg-red-400 pb-8
       '>
         <div className='flex rounded-lg md:w-[525px] w-[400px] bg-white'>
-          <input ref={passwordRef} value={password} className='bg-transparent w-full text-orange-600 font-bold text-xl border-none p-3 outline-none rounded-s-lg ' type="text" />
+          <input ref={passwordRef} value={password} className='bg-transparent w-full text-orange-600 font-bold md:text-xl border-none p-3 outline-none rounded-s-lg ' type="text" />
           <button onClick={handleCopy} className='bg-teal-500 text-white btn p-1 px-3 active:bg-white active:text-black text-xl rounded-e-lg'>copy</button>
         </div>
         <div className='flex gap-3 mt-4'>
           <input ref={ramgeRef} type="range" defaultValue={length} min={0} max={100} onChange={()=>{
             setLength(ramgeRef.current.value)
           }}/>
-          <span className='text-teal-800 font-bold'>Length {length}</span>
+          <span className='text-teal-800 text-sm md:text-xl font-bold'>Length {length}</span>
           <span>
             <input onChange={()=>{setNumberAllowed((prev)=>!prev)}} type="checkbox" name="" id="" />
-            <span className='text-teal-800 font-bold mx-1 '>Numbers</span>
+            <span className='text-teal-800 text-sm md:text-xl font-bold mx-1 '>Numbers</span>
           </span>
           <span>
             <input onChange={()=>{setCharacterAllowed((prev)=>!prev)}} type="checkbox" name="" id="" />
-            <span className='text-teal-800 mx-1 font-bold'>Special Characters</span>
+            <span className='text-teal-800 text-sm md:text-xl mx-1 font-bold'>Special Characters</span>
           </span>
         </div>
         <div className='flex justify-center'>
