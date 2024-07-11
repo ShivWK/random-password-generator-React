@@ -62,7 +62,7 @@ export default function App() {
       <h1 className='text-4xl text-center mt-10 mx-2 font-medium'>Password Generater</h1>
       <div className='mt-5 w-fit mx-auto p-4 rounded-lg bg-red-400 pb-8
       '>
-        <div className='flex rounded-lg md:w-[525px] w-[255px] bg-white'>
+        <div className='flex rounded-lg md:w-[525px] w-[300px] bg-white'>
           <input ref={passwordRef} value={password} className='bg-transparent w-full text-orange-600 font-bold text-xl border-none p-3 outline-none rounded-s-lg ' type="text" />
           <button onClick={handleCopy} className='bg-teal-500 text-white btn p-1 px-3 active:bg-white active:text-black text-xl rounded-e-lg'>copy</button>
         </div>
